@@ -7,11 +7,11 @@ cx_Oracle.init_oracle_client(lib_dir=r"C:\instantclient_21_12")
 app = Flask(__name__)
 
 # Configurar la cadena de conexión
-user = 'x7944486'
-password = 'x7944486'
-host = 'oracle0.ugr.es'
-port = '1521'
-service_name = 'practbd.oracle0.ugr.es'
+user = 'username'
+password = 'password'
+host = 'oracle0.es'
+port = '2500'
+service_name = 'practbd.oracle0.es'
 
 dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
 connection = cx_Oracle.connect(user, password, dsn)
